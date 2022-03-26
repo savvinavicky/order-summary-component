@@ -1,0 +1,103 @@
+/* 
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --color-primary-pale: hsl(225, 100%, 94%);
+    --color-primary-bright: hsl(245, 75%, 52%);
+    --color-secondary-pale: hsl(225, 100%, 98%);
+    --color-secondary-desaturated: hsl(224, 23%, 55%);
+    --color-secondary-dark: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: var(--color-secondary-dark);
+}
+
+.container {
+    width: 1440px;
+    background-color: var(--color-primary-pale);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 45%;
+    margin: 0 auto;
+    padding: 108px;
+}
+
+.card {
+    width: 450px;
+    background-color: var(--color-secondary-pale);
+    background-image: url("images/illustration-hero.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: center;
+}
+
+.text-xl {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--color-secondary-dark);
+}
+
+.text-md {
+    font-weight: 500;
+    color: var(--color-secondary-desaturated);
+}
+
+.text-btn-primary {
+    font-weight: 700;
+    color: var(--color-secondary-pale);
+}
+
+.text-btn-secondary {
+    font-weight: 700;
+    color: var(--color-secondary-dark);
+}
+
+.order h1 {
+    padding-top: 274px;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: var(--color-primary-bright);
+}
